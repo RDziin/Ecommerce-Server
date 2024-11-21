@@ -1,0 +1,17 @@
+curl -X POST http://localhost:3000/produtos \
+-H "Content-Type: application/json" \
+-d '{"name": "Calça Cargo", "price": 69.99, "quantify": 60}'
+
+###
+
+curl -X GET http://localhost:3000/produtos 
+
+###
+
+curl -X PUT http://localhost:3000/produtos/525360ea-0f2f-487a-8e96-08685a4db92d \
+-H "Content-Type: application/json"
+-d  '{"name": "Camisa Polo", "price": 45.95, "quantify": 35}'
+
+###
+curl -X DELETE http://localhost:3000/produtos/525360ea-0f2f-487a-8e96-08685a4db92d \
+-H "Content-Type: application/json"
